@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ${APP_NAME} # Change this to your app name
-  namespace: ${KUBERNETES_NAMESPACE} # Ask the teacher for the namespace name
+  namespace: m324-2 # Ask the teacher for the namespace name
   labels:
     app: ${APP_NAME} # Change this to your app name
 spec:

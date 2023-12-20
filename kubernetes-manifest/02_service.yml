@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ${APP_NAME} # Change this to your app name
-  namespace: ${KUBERNETES_NAMESPACE} # Ask the teacher for the namespace name
+  namespace: m324-2 
 spec:
   ports:
     - port: 80

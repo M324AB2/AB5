@@ -1,4 +1,3 @@
-# This is only an example. You don't apply this ingress file and don't use this in your pipeline.
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
