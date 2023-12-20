@@ -8,20 +8,16 @@ on:
     types:
       - opened
       - synchronize
-
 jobs:
   docker:
     runs-on: self-hosted
     steps:
-      - name: Checkout Repository
+      -
+        name: Checkout Repository
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0 # holt die gesamte Git-Historie für PRs
-
-      - name: Build 
+      -      
+        name: Build 
         uses: docker/build-push-action@v5
         with:
-          context: . # oder den Pfad zum Verzeichnis, das Ihr Dockerfile enthält, falls es nicht im Root liegt
-          file: ./Dockerfile # oder den Pfad zu Ihrem Dockerfile, falls es nicht "Dockerfile" heißt oder nicht im Root liegt
           push: false
           tags: shanthosh04/m324-typescript:latest
