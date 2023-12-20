@@ -3,7 +3,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: my-app # Change this to your app name
-  namespace: m324-2 # Ask the teacher for the namespace name
+  namespace: m324 # Ask the teacher for the namespace name
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
     acme.cert-manager.io/http01-edit-in-place: "true"
