@@ -4,21 +4,21 @@ metadata:
   name: ${APP_NAME} # Change this to your app name
   namespace: m324-2 # Ask the teacher for the namespace name
   labels:
-    app: ${APP_NAME} # Change this to your app name
+    app: Modul324_AB5_Shanthosh # Change this to your app name
 spec:
   replicas: 1
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: ${APP_NAME} # Change this to your app name
+      app: Modul324_AB5_Shanthosh # Change this to your app name
   template:
     metadata:
       labels:
-        app: ${APP_NAME} # Change this to your app name
+        app: Modul324_AB5_Shanthosh # Change this to your app name
     spec:
       containers:
-        - name: ${APP_NAME} # Change this to your app name
-          image: ${IMAGE_TAG} # Change this to your image tag
+        - name: Modul324_AB5_Shanthosh # Change this to your app name
+          image: shanthosh04/m324-typescript:latest # Change this to your image tag
           command:
             - /bin/sh
             - "-c"

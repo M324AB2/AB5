@@ -54,6 +54,6 @@ jobs:
         env:
           KUBERNETES_NAMESPACE: m324-2
           IMAGE_TAG: shanthosh04/m324-typescript:latest
-          APP_NAME: Modul324_ab05_Shanthosh
-          BASE_URL: shanthosh.m324.hackerman.ch
+          APP_NAME: Modul324_AB5_Shanthosh
+          BASE_URL: shanthosh04.m324.hackerman.ch
       

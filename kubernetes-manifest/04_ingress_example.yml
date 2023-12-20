@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: my-app # Change this to your app name
+  name: Modul324_AB5_Shanthosh # Change this to your app name
   namespace: m324 # Ask the teacher for the namespace name
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
@@ -12,16 +12,16 @@ metadata:
 spec:
   tls:
     - hosts:
-        - test.m324.hackerman.ch # Change this to your base url example: my-subdomain.m324.hackerman.ch
-      secretName: test.m324.hackerman.ch-tls # Change this to your base url example: my-subdomain.m324.hackerman.ch-tls
+        - shanthosh04.m324.hackerman.ch # Change this to your base url example: my-subdomain.m324.hackerman.ch
+      secretName: shanthosh04.m324.hackerman.ch-tls # Change this to your base url example: my-subdomain.m324.hackerman.ch-tls
   rules:
-    - host: test.m324.hackerman.ch # Change this to your base url example: my-subdomain.m324.hackerman.ch
+    - host: shanthosh04.m324.hackerman.ch # Change this to your base url example: my-subdomain.m324.hackerman.ch
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: my-app # Change this to your app name
+                name: Modul324_AB5_Shanthosh # Change this to your app name
                 port:
                   number: 80
