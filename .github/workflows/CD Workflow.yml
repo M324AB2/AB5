@@ -33,7 +33,7 @@ jobs:
         name: Set Kubernetes Context
         uses: azure/k8s-set-context@v3
         with:
-          kubeconfig: ${{ secrets.KUBE_CONFIG }}
+          kubeconfig: '${{ secrets.KUBE_CONFIG }}'
       -
         name: Replace and Apply Kubernetes Manifests
         uses: swdotcom/update-and-apply-kubernetes-configs@v1
