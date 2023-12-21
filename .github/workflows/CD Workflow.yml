@@ -10,7 +10,7 @@ name: cd
 jobs:
   docker:
     if: '${{ github.event.pull_request.merged }}'
-    runs-on: [self-hosted, yusuf]
+    runs-on: [self-hosted, shanthosh]
     steps:
       -
         uses: actions/checkout@v2
@@ -57,4 +57,3 @@ jobs:
           IMAGE_TAG: 'shanthosh04/m324-typescript:latest'
           APP_NAME: my-app-sivas
           BASE_URL: ss.m324.hackerman.ch
-      
