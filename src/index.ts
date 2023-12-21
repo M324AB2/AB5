@@ -25,5 +25,4 @@ app.get('/log/time', (req, res) => {
   console.log(`Current Time: ${currentTime}`);
 
   res.send(`Logged Current Time: ${currentTime}`);
-  
 });
