@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: 'shanthosh04/m324-typescript:latest'
+          tags: 'shanthosh04/m324-typescript:${{env.TAG_NAME}}'
       -
         name: Set up Kubectl
         uses: azure/setup-kubectl@v1
@@ -56,6 +56,6 @@ jobs:
               BASE_URL
         env:
           KUBERNETES_NAMESPACE: m324-2
-          IMAGE_TAG: 'shanthosh04/m324-typescript:latest'
+          IMAGE_TAG: 'shanthosh04/m324-typescript:${{env.TAG_NAME}}'
           APP_NAME: my-app-sivas
           BASE_URL: ss.m324.hackerman.ch
