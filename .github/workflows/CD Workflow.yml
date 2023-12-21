@@ -8,7 +8,7 @@ on:
 jobs:
   docker:
     if: startsWith(github.ref, 'refs/tags/')
-    runs-on: [self-hosted, yusuf]
+    runs-on: [self-hosted, shanthosh]
     steps:
       - uses: actions/checkout@v2
 
