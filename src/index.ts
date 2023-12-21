@@ -2,6 +2,7 @@ import express from 'express';
 import http from 'http';
 import { Request, Response } from 'express';
 import os from 'os';
+import { log, time } from 'console';
 
 // Create the express server
 const app = express();
@@ -16,4 +17,13 @@ const serverPort = process.env.PORT || 3000;
 server.listen(serverPort, () => {
   // eslint-disable-next-line no-console
   console.log(`Express Server started on port ${serverPort}`);
+});
+
+app.get('/log/time', (req, res) => {
+  const currentTime = new Date().toLocaleTimeString();
+
+  console.log(`Current Time: ${currentTime}`);
+
+  res.send(`Logged Current Time: ${currentTime}`);
+  
 });
