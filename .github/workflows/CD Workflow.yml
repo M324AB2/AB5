@@ -57,5 +57,5 @@ jobs:
           KUBERNETES_NAMESPACE: m324-2
           IMAGE_TAG: 'shanthosh04/m324-typescript:latest'
           APP_NAME: my-app-sivas
-          BASE_URL: shanthosh04.m324.hackerman.ch
+          BASE_URL: ss.m324.hackerman.ch
       
