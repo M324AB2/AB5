@@ -10,7 +10,7 @@ name: cd
 jobs:
   docker:
     if: '${{ github.event.pull_request.merged }}'
-    runs-on: [self-hosted]
+    runs-on: [self-hosted, yusuf]
     steps:
       -
         uses: actions/checkout@v2
