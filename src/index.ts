@@ -2,7 +2,6 @@ import express from 'express';
 import http from 'http';
 import { Request, Response } from 'express';
 import os from 'os';
-import { log, time } from 'console';
 
 // Create the express server
 const app = express();
