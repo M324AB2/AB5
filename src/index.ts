@@ -20,7 +20,7 @@ server.listen(serverPort, () => {
 });
 
 app.get('/log/time', (req, res) => {
-  const currentTime = new Date().toLocaleTimeString();
+  const currentTime = new Date().toISOString();
 
   console.log(`Current Time: ${currentTime}`);
 
